@@ -59,8 +59,3 @@ Manages the collection of books and operations like:
   - Getters for each attribute (e.g., getIsbn()).
   - setAvailable(boolean available): Updates the availability status of the book.
 
-## How to Run
-
-1. Clone the repository.
-2. Make sure Java 11 or higher is installed on your system.
-3. Build and run the project using your preferred IDE (e.g., IntelliJ IDEA, Eclipse) or use Maven/Gradle for build management.
