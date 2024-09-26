@@ -1,6 +1,6 @@
 # Library Management System
 
-This is a *Library Management System* built in *Java, following **Test-Driven Development (TDD)* principles.
+This is a *Library Management System* built in **Java**, following **Test-Driven Development (TDD)** principles.
 
 It allows users to add books, borrow them, return them, and view available books. The code adheres to *clean coding practices* and *object-oriented programming (OOP)* principles.
 
