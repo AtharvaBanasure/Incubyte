@@ -1,56 +1,66 @@
-**Library Management System**
+# Library Management System
 
-This is a Library Management System built in Java, following Test-Driven Development (TDD) principles. 
+This is a *Library Management System* built in *Java, following **Test-Driven Development (TDD)* principles.
 
-It allows users to add books, borrow them, return them, and view available books. The code adheres to clean coding practices and object-oriented programming (OOP) principles.
+It allows users to add books, borrow them, return them, and view available books. The code adheres to *clean coding practices* and *object-oriented programming (OOP)* principles.
 
+## Features
 
-**Features**
+- *Add Books*: Users can add new books with a unique identifier (ISBN), title, author, and publication year.
+- *Borrow Books*: Books can be borrowed if available. The system ensures availability before lending.
+- *Return Books*: Borrowed books can be returned, updating their availability status.
+- *View Available Books*: A list of available books can be viewed.
 
-**Add Books:** Users can add new books with a unique identifier (ISBN), title, author, and publication year.
+## Project Structure
 
-**Borrow Books:** Books can be borrowed if available. The system ensures availability before lending.
+### Book Class
+Represents a book with attributes such as:
+- ISBN
+- Title
+- Author
+- Publication Year
+- Availability Status
 
-**Return Books:** Borrowed books can be returned, updating their availability status.
+### Library Class
+Manages the collection of books and operations like:
+- Adding books
+- Borrowing books
+- Returning books
+- Viewing available books
 
-**View Available Books:** A list of available books can be viewed.
+## Requirements
 
+- *Java*: Make sure Java 11 or higher is installed.
+- *JUnit*: The project uses JUnit for unit testing. If you’re using Maven or Gradle, the dependencies are already set up.
 
-**Project Structure**
-
-
-**Book Class:** Represents a book with attributes such as ISBN, title, author, publication year, and availability status.
-
-**Library Class:** Manages the collection of books and operations like adding, borrowing, returning, and viewing books.
-
-**Requirements**
-
-**Java:** Make sure Java 11 or higher is installed.
-
-**JUnit:** The project uses JUnit for unit testing. If you’re using Maven or Gradle, the dependencies are already set up.
-
-
-
-**Methods:**
-
-
-**1.Library Class:**
-
-**addBook(Book book):** Adds a book to the library.
-
-**borrowBook(String isbn):** Allows a user to borrow a book if it's available.
-
-**returnBook(String isbn):** Allows a user to return a borrowed book.
-
-**viewAvailableBooks():** Returns a list of all available books.
+## Class Diagram
+![Screenshot 2024-09-27 025722](https://github.com/user-attachments/assets/83c71448-7396-4fe5-80f1-ce28fef4e1e6)
 
 
-**2.Book Class:**
+## Methods
 
-Attributes include ISBN, Title, Author, Publication Year, and Availability.
+### 1. Library Class
 
-**Methods:**
+- addBook(Book book): Adds a book to the library.
+- borrowBook(String isbn): Allows a user to borrow a book if it's available.
+- returnBook(String isbn): Allows a user to return a borrowed book.
+- viewAvailableBooks(): Returns a list of all available books.
 
-**Getters** for each attribute (e.g., getIsbn()).
+### 2. Book Class
 
-**setAvailable(boolean):** Updates the availability status of the book.
+- *Attributes*:
+  - ISBN
+  - Title
+  - Author
+  - Publication Year
+  - Availability
+
+- *Methods*:
+  - Getters for each attribute (e.g., getIsbn()).
+  - setAvailable(boolean available): Updates the availability status of the book.
+
+## How to Run
+
+1. Clone the repository.
+2. Make sure Java 11 or higher is installed on your system.
+3. Build and run the project using your preferred IDE (e.g., IntelliJ IDEA, Eclipse) or use Maven/Gradle for build management.
